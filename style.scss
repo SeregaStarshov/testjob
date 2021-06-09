@@ -1,0 +1,278 @@
+$bg-grey: #F8F8F8;
+$green: #428A60;
+$black-text: #212121;
+$font-text: 'Montserrat', sans-serif;
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-text;
+    background-color: #F4F4F4;
+}
+ul,
+ol {
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+.production {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.wrapper {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1120px;
+}
+.production-images {
+    width: 50%;
+    max-height: 500px;
+    background-image: url('../images/bg-img.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    &__wrap-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__img {
+        position: absolute;
+        bottom: 14px;
+        width: 83%;
+        left: 57px;
+    }
+    &__label {
+        padding: 40px;
+        span {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 23px;
+            color: white;
+        }
+    }
+    &__text {
+        padding: 40px;
+        margin-top: 313px;
+        span {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 23px;
+            color: white;
+        }
+    }
+}
+.production-blog {
+    width: 50%;
+    max-height: 500px;
+    background-color: white;
+    border: 1px solid rgba(#E4E4E4, .5);
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+    &__title {
+        background-color: $bg-grey;
+        padding-top: 29px;
+        padding-bottom: 29px;
+        margin-bottom: 52px;
+        border-top-right-radius: 30px;
+    }
+    &__main-title {
+        max-width: 303px;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 39px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__form {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    &__form-name {
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+        font-family: $font-text;
+        color: $black-text;
+        margin-bottom: 10px;
+        span {
+            color: #428A60;
+        }
+    }
+    &__form-text {
+        width: 100%;
+        background-color: $bg-grey;
+        padding: 16px 20px;
+        color: rgba($black-text, .2);
+        border: 1px solid #E4E4E4;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    &__form-phone {
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+        font-family: $font-text;
+        color: $black-text;
+        margin-bottom: 10px;
+        span {
+            color: #428A60;
+        }
+    }
+    &__form-tel {
+        background-color: $bg-grey;
+        padding: 16px 20px;
+        color: rgba($black-text, .2);
+        border: 1px solid #E4E4E4;
+        border-radius: 5px;
+        max-width: 57.5%;
+        margin-right: 20px;
+        margin-bottom: 38px;
+    }
+    &__form-list {
+        padding: 16px 20px;
+        border: 1px solid #E4E4E4;
+        width: 34.8%;
+        border-radius: 5px;
+        background-color: $bg-grey;
+        background-image: url('../images/rus.jpg');
+        background-repeat: no-repeat;
+        background-position-y: 46%;
+        background-position-x: 71%;
+    }
+    &__form-btn {
+        width: 100%;
+        background-color: $green;
+        padding: 12px 114px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        span {
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            padding-right: 10px;
+        }
+    }
+    &__security {
+        display: none;
+    }
+    &__trusted {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        color: $black-text;
+    }
+    &__img-lock {
+        margin: 0 20px;
+    }
+    &__secure {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        color: $black-text;
+    }
+}
+@media (max-width: 1100px) {
+    .production-images {
+        &__img {
+            bottom: 25px;
+        }
+    }
+    .container {
+        padding: 0;
+        max-width: 1120px;
+    }
+}
+@media (max-width: 680px) {
+    .wrapper {
+        flex-direction: column;
+        .production-images {
+            background-image: url('../images/bg-mobile.png');
+            background-size: 202px 202px;
+            background-position-y: 99%;
+            background-color: white;
+            width: 100%;
+            min-height: 311px;
+            &__wrap-text {
+                margin: 0;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            &__img {
+                width: 223px;
+                height: 122px;
+                bottom: 34px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+            &__label {
+                padding-top: 40px;
+                padding-bottom: 9px;
+                padding-left: 20px;
+                span {
+                    color: $black-text;
+                }
+            }
+            &__text {
+                margin: 0;
+                padding-top: 40px;
+                padding-bottom: 9px;
+                padding-right: 20px;
+                span {
+                    color: $black-text;
+                }
+            }
+        }
+        .production-blog {
+            width: 100%;
+            filter: none;
+            border: none;
+            border-bottom: 1px solid rgba(#E4E4E4, .5);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+            &__title {
+                background-color: transparent;
+            }
+            &__form {
+                padding: 0 20px;
+            }
+            &__form-tel {
+                margin-right: 11px;
+                max-width: 59.5%;
+                margin-bottom: 28px;
+            }
+            &__form-btn {
+                margin-bottom: 28px;
+                padding: 12px 94px;
+            }
+            &__form-list {
+                margin-bottom: 28px;
+            }
+            &__security {
+                display: block;
+                text-align: center;
+                padding-top: 11px;
+                padding-bottom: 11px;
+                background-color: $bg-grey;
+            }
+        }
+    }
+}

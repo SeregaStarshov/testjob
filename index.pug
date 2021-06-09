@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet")
+        link(href="src/style.css" rel="stylesheet")
+    body
+        section.production
+            .container
+                .wrapper
+                    .production-images
+                        .production-images__wrap-text
+                            .production-images__label
+                                span Reduslim
+                            .production-images__text
+                                span ECO
+                        img.production-images__img(src="images/production-image.png" alt="img")
+                    .production-blog
+                        .production-blog__title
+                            h2.production-blog__main-title Сделай шаг<br> к выздоровлению
+                        form.production-blog__form(action="#" autocomplete="on")
+                            p.production-blog__form-name Ваше 
+                                span имя
+                            input.production-blog__form-text(type="text" name="username" value="" placeholder="Алексей")
+                            p.production-blog__form-phone Ваш 
+                                span телефон
+                            input.production-blog__form-tel(type="tel:+71234567890" name="phone" value="" placeholder="+7 (123) 456 78-90")
+                            select.production-blog__form-list(name="")
+                                option.production-blog__form-item(value="RU") RU
+                                option.production-blog__form-item(value="EN") EN
+                            button.production-blog__form-btn(type="submit")
+                                span Заказать
+                                img(src="images/next.svg" alt="next")
+                        .production-blog__security
+                            span.production-blog__trusted Trusted
+                            img.production-blog__img-lock(src="images/lock.svg" width="12" height="15" alt="")
+                            span.production-blog__secure Secure
